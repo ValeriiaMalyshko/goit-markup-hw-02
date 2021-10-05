@@ -2,21 +2,20 @@
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --accent-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --second-background-color: #F5F4FA;
+    --footer-backgroud-color: #2F303A;
 }
-/* цвет основного текста #212121*/
-/* вторичный цвет текста #757575 */
-/* белый #FFFFFF   */
-/* акцент #2196F3 */
-/* вторичный цвет фона #2F303A #F5F4FA */
 
 body{
-    background-color:#FFFFFF;
+    background-color:var(--primary-background-color);
     color:var(--primary-text-color) ;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
 ul {
     list-style: none;
+    text-decoration: none
 }
 .logo {
     color:#000000;
@@ -29,7 +28,7 @@ ul {
     color: var(--accent-color);
 }
 .logo-second {
-    color: #FFFFFF;
+    color: var(--primary-background-color);
 }
 
 /* Site nav */
@@ -58,19 +57,23 @@ ul {
 
 /* Hero */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--footer-backgroud-color);
     text-align: center;
 }
 .hero-title {
-    color:#FFFFFF;
+    color:var(--primary-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
 }
 .button {
-    color:#FFFFFF;
+    color:var(--primary-background-color);
     background-color: var(--accent-color);
     font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* Dignity */
@@ -90,13 +93,13 @@ ul {
     color: var(--title-text-color);
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
 }
 
 /* Command */
 .command {
-    background-color: #F5F4FA;
+    background-color:var(--second-background-color);
     font-size: 16px;
     line-height: 1.19;
 }
@@ -116,11 +119,11 @@ ul {
 
 /* footer */
 footer {
-    background-color: #2F303A;
+    background-color: var(--footer-backgroud-color);
 }
 .contacts,
 .contacts a {
-    color: #FFFFFF;
+    color: var(--primary-background-color);
     font-size: 14px;
     line-height: 1.71;
 }
@@ -132,7 +135,7 @@ footer {
 
 .projects-nav button {
     color: var(--title-text-color);
-    background-color: #F5F4FA;
+    background-color:var(--second-background-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -140,7 +143,7 @@ footer {
 .projects-nav button:hover,
 .projects-nav button:focus {
     background-color: var(--accent-color);
-    color: white;
+    color:var(--primary-background-color);
 }
 .projects {
     font-size: 16px;
