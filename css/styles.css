@@ -14,13 +14,14 @@ body{
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-ul {
+.list {
     list-style: none;
 }
-a {
+.link {
     text-decoration: none;
+    font-family: inherit;
 }
-button {
+.btn {
     border: none;
 }
     
@@ -45,21 +46,21 @@ button {
     font-size: 14px;
     line-height: 1.14;
 }
-.site-nav a {
+.site-nav  {
     color: var(--title-text-color);
 }
-.site-nav a:hover, 
-.site-nav a:focus {
+.site-nav .link:hover, 
+.site-nav .link:focus {
     color: var(--accent-color);
 }
 .site-nav .site-nav-current {
     color: var(--accent-color);
 }
-.auth-nav a {
+.auth-nav .link {
     color:var(--primary-text-color);
 }
-.auth-nav a:hover,
-.auth-nav a:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
     color:var(--accent-color);
 }
 
@@ -73,8 +74,9 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-transform: uppercase;
 }
-.button {
+.hero .btn {
     color:var(--primary-background-color);
     background-color: var(--accent-color);
     font-family: inherit;
@@ -94,6 +96,7 @@ button {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase
 }
 
 /* Engage */
@@ -130,26 +133,26 @@ footer {
     background-color: var(--footer-backgroud-color);
 }
 .contacts,
-.contacts a {
+.contacts .link {
     color: var(--primary-background-color);
     font-size: 14px;
     line-height: 1.71;
 }
-.contacts a:hover,
-.contacts a:focus {
+.contacts .link:hover,
+.contacts .link:focus {
     color:var(--accent-color)
 }
 /* Projects */
 
-.projects-nav button {
+.projects-nav .btn {
     color: var(--title-text-color);
     background-color:var(--second-background-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
 }
-.projects-nav button:hover,
-.projects-nav button:focus {
+.projects-nav .btn:hover,
+.projects-nav .btn:focus {
     background-color: var(--accent-color);
     color:var(--primary-background-color);
 }
