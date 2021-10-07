@@ -19,7 +19,6 @@ body{
 }
 .link {
     text-decoration: none;
-    font-family: inherit;
 }
 .btn {
     border: none;
@@ -41,14 +40,14 @@ body{
 }
 
 /* Site nav */
-.site-nav {
+.site-nav .link {
+    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-}
-.site-nav  {
     color: var(--title-text-color);
 }
+
 .site-nav .link:hover, 
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -57,6 +56,10 @@ body{
     color: var(--accent-color);
 }
 .auth-nav .link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
     color:var(--primary-text-color);
 }
 .auth-nav .link:hover,
@@ -132,11 +135,19 @@ body{
 footer {
     background-color: var(--footer-backgroud-color);
 }
-.contacts,
-.contacts .link {
-    color: var(--primary-background-color);
+address {
+    font-style: normal
+  }
+.contacts {
+    font-family: inherit ;
     font-size: 14px;
     line-height: 1.71;
+}
+.contacts-item {
+    color: var(--primary-background-color);
+}
+.contacts .link {
+    color: var(--primary-background-color) 60%;
 }
 .contacts .link:hover,
 .contacts .link:focus {
